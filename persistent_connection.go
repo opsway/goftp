@@ -267,9 +267,9 @@ func (pconn *persistentConn) requestPassive() (string, error) {
 		err        error
 	)
 
-	if pconn.epsvNotSupported {
-		goto PASV
-	}
+	//if pconn.epsvNotSupported {
+	goto PASV
+	//}
 
 	// Extended PaSsiVe (same idea as PASV, but works with IPv6).
 	// See http://tools.ietf.org/html/rfc2428.
